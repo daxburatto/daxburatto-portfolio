@@ -26,13 +26,15 @@ header {
     position: relative;
     top: 0;
     z-index: 9999;
+    flex-direction: row-reverse;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     color: var(--secondary-color);
     margin: 0;
+    padding-right: 60px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -77,12 +79,15 @@ section {
 .about {
     display: flex;
     flex-wrap: wrap;
-    flex: 2 60%;
+    flex-direction: column;
+    width: 60%;
+    float: right;
 }
 
 .about-title {
     color: var(--secondary-color);
-    font-size: 50px;
+    font-size: 45px;
+    padding: 20px;
 }
 
 .about-text {
@@ -94,17 +99,30 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex: 1 40%;
+    flex-direction: column;
+    width: 35%;
 }
 
 .contact-title {
     color: var(--secondary-color);
+    padding-bottom: 10px;
+    width: 40%;
+    line-height: 1.5;
 }
 
 .contact-list {
     color: var(--tertiary-color);
+    line-height: 1.5;
 
 }
 
-.contact a {
+.contact-list ul li {
     text-decoration: none;
+    list-style: none;
+}
+
+.contact-list ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--tertiary-color);
 }
