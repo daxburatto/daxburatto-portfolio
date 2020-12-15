@@ -1,0 +1,110 @@
+:root {
+    --primary-color:#000000;
+    --secondary-color:#ffffff;
+    --tertiary-color:#999799;
+    --accent-color:#6b4e71;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--secondary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+section {
+    padding: 60px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2 60%;
+}
+
+.about-title {
+    color: var(--secondary-color);
+    font-size: 50px;
+}
+
+.about-text {
+    color: var(--tertiary-color);
+    line-height: 1.5;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 40%;
+}
+
+.contact-title {
+    color: var(--secondary-color);
+}
+
+.contact-list {
+    color: var(--tertiary-color);
+
+}
+
+.contact a {
+    text-decoration: none;
+}
