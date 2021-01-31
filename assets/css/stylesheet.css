@@ -1,0 +1,37 @@
+:root {
+    --primary-color:#000000;
+    --secondary-color:#ffffff;
+    --tertiary-color:#999799;
+    --accent-color:#6b4e71;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--secondary-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--primary-color);
+}
+
+h2 {
+    color: var(--accent-color);
+    text-shadow: 1px 1px var(--tertiary-color) ;
+}
+
+about-me {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+about-text {
+    line-height: 1px;
+}
+
+contact {
+    padding: 10px;
+}
+
